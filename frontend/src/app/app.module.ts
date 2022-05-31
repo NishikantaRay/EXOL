@@ -13,6 +13,9 @@ import { FunfactorComponent } from './main/funfactor/funfactor.component';
 import { LiveexamComponent } from './main/liveexam/liveexam.component';
 import { LiveexamheaderComponent } from './main/liveexamheader/liveexamheader.component';
 import { LiveexamcourseComponent } from './main/liveexamcourse/liveexamcourse.component';
+import { RepoComponent } from './main/repo/repo.component';
+import { RepouploadComponent } from './main/repoupload/repoupload.component';
+import { ContactComponent } from './main/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { LiveexamcourseComponent } from './main/liveexamcourse/liveexamcourse.co
     FunfactorComponent,
     LiveexamComponent,
     LiveexamheaderComponent,
-    LiveexamcourseComponent
+    LiveexamcourseComponent,
+    RepoComponent,
+    RepouploadComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

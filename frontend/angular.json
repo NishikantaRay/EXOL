@@ -41,7 +41,8 @@
               "src/assets/css/animate.css",
               "src/assets/css/bootsnav.css", 
               "src/assets/style.css",
-              "src/assets/css/responsive.css"
+              "src/assets/css/responsive.css",
+              "src/assets/css/Repository.css"
             ],
             "scripts": [
               "src/assets/js/jquery-1.12.4.min.js",
@@ -136,7 +137,8 @@
               "src/assets/css/animate.css",
               "src/assets/css/bootsnav.css", 
               "src/assets/style.css",
-              "src/assets/css/responsive.css"
+              "src/assets/css/responsive.css",
+              "src/assets/css/Repository.css"
             ],
             "scripts": [
               "src/assets/js/jquery-1.12.4.min.js",
