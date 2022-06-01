@@ -1,9 +1,4 @@
-<!-- Preloader Start -->
 <div class="se-pre-con"></div>
-<!-- Preloader Ends -->
-
-<!-- Start Header Top 
-============================================= -->
 <div class="top-bar-area address-two-lines bg-dark text-light">
     <div class="container">
         <div class="row">
@@ -33,11 +28,7 @@
         </div>
     </div>
 </div>
-<!-- End Header Top -->
-<app-nav></app-nav>
-<!-- Start Login Form 
-    ============================================= -->
-    <form action="#" id="login-form" class="mfp-hide white-popup-block">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmitloginform()" id="login-form" class="mfp-hide white-popup-block">
         <div class="col-md-4 login-social">
             <h4>Login with social</h4>
             <ul>
@@ -63,23 +54,23 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Email*" type="email">
+                        <input  formControlName="email" class="form-control" placeholder="Email*" type="email">
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Password*" type="text">
+                        <input class="form-control"  formControlName="password" placeholder="Password*" type="password">
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <div class="row">
                     <label for="login-remember"><input type="checkbox" id="login-remember">Remember Me</label>
                     <a title="Lost Password" href="#" class="lost-pass-link">Lost your password?</a>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-12">
                 <div class="row">
                     <button type="submit">
@@ -94,7 +85,7 @@
 
     <!-- Start Register Form 
     ============================================= -->
-    <form action="#" id="register-form" class="mfp-hide white-popup-block">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmitregform()" id="register-form" class="mfp-hide white-popup-block">
         <div class="col-md-4 login-social">
             <h4>Register with social</h4>
             <ul>
@@ -120,34 +111,34 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Email*" type="email">
+                        <input class="form-control"  formControlName="email" placeholder="Email*" type="email">
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Username*" type="text">
+                        <input class="form-control"  formControlName="name" placeholder="Username*" type="text">
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Password*" type="text">
+                        <input class="form-control"  formControlName="pass" placeholder="Password*" type="password">
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Repeat Password*" type="text">
+                        <input class="form-control"   placeholder="Repeat Password*" type="password">
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="row">
-                    <button type="submit">
+                    <button type="submit" name="submit">
                         Sign up
                     </button>
                 </div>
@@ -160,4 +151,4 @@
     <app-whychoose></app-whychoose>
     <app-funfactor></app-funfactor>
     <app-testimonial></app-testimonial>
-    <app-footer></app-footer>
+    
